@@ -1,0 +1,53 @@
+{
+  "id": 1,
+  "name": "Budynek1",
+  "poziomy":
+	[
+		{	
+			"id": 2,
+			"name": "Poziom0",
+			"rooms": 
+				[
+					{  
+						"id": 4,
+						"name": "Pokoj1",
+						"area": 5.5,
+						"cube": 6.1,
+						"heating": 7.2,
+						"light": 5.2
+					},
+					{
+						"id": 5,
+						"name": "Pokoj2",
+						"area": 10.2,
+						"cube": 4.1,
+						"heating": 5.2,
+						"light": 9.9
+					}
+				]
+		},
+		{
+			"id": 3,
+			"name": "Poziom1",
+			"rooms": 
+				[
+					{  
+						"id": 6,
+						"name": "Pokoj1",
+						"area": 5.5,
+						"cube": 6.1,
+						"heating": 7.2,
+						"light": 5.2
+					},
+					{
+						"id": 7,
+						"name": "Pokoj2",
+						"area": 10.2,
+						"cube": 4.1,
+						"heating": 5.2,
+						"light": 9.9
+					}
+				]
+		}
+	]
+}
