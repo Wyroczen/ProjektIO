@@ -60,6 +60,13 @@ public class TextTransformerController {
     public HashSet<Room> getPomieszczenia() {
         return SetsOfLocations.getHashSetRooms();
     }
+    
+    // GET pomieszczenia
+    @RequestMapping(value = "/:", method = RequestMethod.GET, produces = "application/json")
+    
+    public HashSet<Room> getPowierzchnia() {
+        return SetsOfLocations.getHashSetRooms();
+    }
 }
 
 

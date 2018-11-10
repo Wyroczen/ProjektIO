@@ -20,4 +20,18 @@ public class Room extends Location{
         super(nazwa);
     }
     public Room(){}
+
+    public Double getArea() {
+        return area;
+    }
+
+    public Double getCube() {
+        return cube;
+    }
+
+    public Double getHeating() {
+        return heating;
+    }
+    
+    
 }
