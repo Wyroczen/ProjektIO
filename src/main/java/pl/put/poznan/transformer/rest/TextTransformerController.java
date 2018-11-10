@@ -9,6 +9,8 @@ import pl.put.poznan.transformer.app.SetsOfLocations;
 import pl.put.poznan.transformer.app.Location;
 import pl.put.poznan.transformer.app.Room;
 import pl.put.poznan.transformer.app.Level;
+import pl.put.poznan.transformer.logic.AreaCalculator;
+import pl.put.poznan.transformer.logic.CubatureCalculator;
 
 
 @RestController
@@ -61,11 +63,18 @@ public class TextTransformerController {
         return SetsOfLocations.getHashSetRooms();
     }
     
-    // GET pomieszczenia
-    @RequestMapping(value = "/:", method = RequestMethod.GET, produces = "application/json")
+        // GET area
+    @RequestMapping(value = "/calculate-area/{id}", method = RequestMethod.GET)
+    public Double getArea(@PathVariable("id") String id) {
+        //return AreaCalculator.calculateArea(id);
+        return AreaCalculator.calculateArea(id);
+    }
     
-    public HashSet<Room> getPowierzchnia() {
-        return SetsOfLocations.getHashSetRooms();
+        // GET area
+    @RequestMapping(value = "/calculate-cubature/{id}", method = RequestMethod.GET)
+    public Double getCubature(@PathVariable("id") String id) {
+        //return AreaCalculator.calculateArea(id);
+        return CubatureCalculator.calculateCubature(id);
     }
 }
 

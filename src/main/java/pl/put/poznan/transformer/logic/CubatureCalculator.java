@@ -16,32 +16,33 @@ import pl.put.poznan.transformer.app.SetsOfLocations;
  *
  * @author corpt
  */
-public final class AreaCalculator {
+public class CubatureCalculator {
     
-    public static Double calculateArea(String str){
+        public static Double calculateCubature(String str){
         
         Location loc = Helper.getObjectById(SetsOfLocations.getHashSetLocations(), Integer.parseInt(str));
         
-        Double area = 0.d;
+        Double cubature = 0.d;
         if(loc instanceof Building){
             Building b = (Building)loc;
             for(Level f : b.getPoziomy()){
                 for(Room r : f.getRooms()){
-                    area+=r.getArea();
+                    cubature+=r.getCube();
                 }
             }
         }
         else if(loc instanceof Level){
             Level l = (Level)loc;
             for(Room r : l.getRooms()){
-                    area+=r.getArea();
+                    cubature+=r.getCube();
                 }
         }
         else if(loc instanceof  Room){
             Room r = (Room)loc;
-            area = r.getArea();
+            cubature = r.getCube();
         }
-        return area;
+        return cubature;
     }
+
     
 }
