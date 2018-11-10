@@ -9,17 +9,20 @@ package pl.put.poznan.transformer.app;
  *
  * @author wisni
  */
-public class Room extends Location{
+public class Room extends Location {
+
     Double area;
     Double cube;
     Double heating;
     Double light;
-    
+
     //kosntruktory
     public Room(String nazwa) {
         super(nazwa);
     }
-    public Room(){}
+
+    public Room() {
+    }
 
     public Double getArea() {
         return area;
@@ -32,6 +35,9 @@ public class Room extends Location{
     public Double getHeating() {
         return heating;
     }
-    
-    
+
+    public Double getLight() {
+        return light;
+    }
+
 }
