@@ -7,5 +7,4 @@ a także jako zdalne API dzięki czemu można ją zintegrować z istniejącymi n
 
 
 Test results:
-
-[<img alt="Build Status" src="https://travis-ci.org/Wyroczen/ProjektIO.svg?branch=master" height="40">][travis-url]
+<img alt="Build Status" src="https://travis-ci.org/Wyroczen/ProjektIO.svg?branch=master" height="40">
