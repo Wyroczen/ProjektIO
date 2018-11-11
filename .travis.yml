@@ -11,4 +11,3 @@ script: mvn clean verify
 
 after_success:
 - ./push-javadoc.sh
-#hm
