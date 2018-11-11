@@ -7,7 +7,13 @@ sudo: true
 
 script: mvn clean verify
 
-
+deploy:
+  provider: releases
+  api_key: GITHUB_API_KEY
+  file: /home/travis/build/Wyroczen/ProjektIO/target/io-project-architecture-1.0.jar
+  skip_cleanup: true
+  on:
+    tags: true
 #after_success: |
 #  if [ -n "$GITHUB_API_KEY" ]; then
 #    cd "$TRAVIS_BUILD_DIR"
@@ -24,10 +30,10 @@ script: mvn clean verify
 #    cd "$TRAVIS_BUILD_DIR"
 #  fi 
   
-before_install:
-  - chmod +x push-javadoc.sh
-after_success:
-- ./push-javadoc.sh
+#before_install:
+#  - chmod +x push-javadoc.sh
+#after_success:
+#- ./push-javadoc.sh
 
 #deploy:
 #  provider: releases
