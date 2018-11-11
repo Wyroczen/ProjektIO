@@ -8,4 +8,4 @@ env:
 script: mvn clean verify
 
 after_success:
-- .push-javadoc.sh
+- ./push-javadoc.sh
