@@ -8,20 +8,38 @@ package pl.put.poznan.transformer.app;
 import java.util.ArrayList;
 
 /**
+ * <h1>Klasa Budynek</h1>
  *
- * @author wisni
+ * @author Amarantowy
+ * @version 1.0
  */
-public class Building extends Location{
+public class Building extends Location {
+
     ArrayList<Level> poziomy = new ArrayList();
-    
+
     //konstruktory
+    /**
+     * Konstruktor
+     *
+     * @param nazwa Pierwszy parametr konstruktora
+     */
     public Building(String nazwa) {
         super(nazwa);
     }
- 
-    public Building(){
+
+    /**
+     * Konstruktor bezparametrowy
+     *
+     * @param nazwa Pierwszy parametr konstruktora
+     */
+    public Building() {
     }
 
+    /**
+     * Getter Piziomy
+     *
+     * @return zwraca ArrayList poziomy
+     */
     public ArrayList<Level> getPoziomy() {
         return poziomy;
     }
