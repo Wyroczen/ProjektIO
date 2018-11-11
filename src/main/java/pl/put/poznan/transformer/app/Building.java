@@ -30,7 +30,6 @@ public class Building extends Location {
     /**
      * Konstruktor bezparametrowy
      *
-     * @param nazwa Pierwszy parametr konstruktora
      */
     public Building() {
     }
