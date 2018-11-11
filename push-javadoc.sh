@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$TRAVIS_REPO_SLUG" == "Wyroczen/ProjektIO" ] && [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
+#if [ "$TRAVIS_REPO_SLUG" == "Wyroczen/ProjektIO" ] && [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
 
   echo -e "Publishing javadoc...\n"
 
@@ -20,4 +20,4 @@ if [ "$TRAVIS_REPO_SLUG" == "Wyroczen/ProjektIO" ] && [ "$TRAVIS_JDK_VERSION" ==
 
   echo -e "Published Javadoc to gh-pages.\n"
   
-fi
+#fi
