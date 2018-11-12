@@ -36,7 +36,7 @@ after_success:
 #    git push -f -q https://<me>:$GITHUB_API_KEY@github.com/Wyroczen/ProjektIO-gh-pages gh-pages &>/dev/null
 #    cd "$TRAVIS_BUILD_DIR"
 #  fi 
-  
+
 #before_install:
 #  - chmod +x push-javadoc.sh
 #after_success:
