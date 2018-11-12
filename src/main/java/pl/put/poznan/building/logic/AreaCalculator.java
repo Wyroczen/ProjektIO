@@ -18,6 +18,11 @@ import pl.put.poznan.building.app.SetsOfLocations;
  */
 public final class AreaCalculator {
     
+    /**
+     *
+     * @param str id obiektu
+     * @return powierzchnia Lokacji
+     */
     public static Double calculateArea(String str){
         
         Location loc = Helper.getObjectById(SetsOfLocations.getHashSetLocations(), Integer.parseInt(str));

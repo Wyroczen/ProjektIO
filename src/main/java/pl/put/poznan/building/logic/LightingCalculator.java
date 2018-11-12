@@ -19,6 +19,11 @@ import static pl.put.poznan.building.logic.AreaCalculator.calculateArea;
  */
 public final class LightingCalculator {
 
+    /**
+     *
+     * @param str id obiektu
+     * @return Moc oświetlenia Lokacji
+     */
     public static Double calculateExposition(String str) {
         //Double calculateLighting(Location loc) {
 

@@ -18,7 +18,12 @@ import pl.put.poznan.building.app.SetsOfLocations;
  */
 public class CubatureCalculator {
     
-        public static Double calculateCubature(String str){
+    /**
+     *
+     * @param str id obiektu
+     * @return Kubatura Lokacji
+     */
+    public static Double calculateCubature(String str){
         
         Location loc = Helper.getObjectById(SetsOfLocations.getHashSetLocations(), Integer.parseInt(str));
         

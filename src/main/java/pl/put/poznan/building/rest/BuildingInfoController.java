@@ -14,12 +14,21 @@ import pl.put.poznan.building.logic.AreaCalculator;
 import pl.put.poznan.building.logic.CubatureCalculator;
 import pl.put.poznan.building.logic.LightingCalculator;
 
+/**
+ *
+ * @author 
+ */
 @RestController
 public class BuildingInfoController {
 
     private static final Logger logger = LoggerFactory.getLogger(BuildingInfoController.class);
 
     // GET LOKACJE
+
+    /**
+     *
+     * @return Lokacje
+     */
     @RequestMapping(value = "/locations", method = RequestMethod.GET, produces = "application/json")
 
     public HashSet<Location> getLokacje() {
@@ -28,6 +37,11 @@ public class BuildingInfoController {
     }
 
     // GET, POST buildings
+
+    /**
+     *
+     * @return Budynki
+     */
     @RequestMapping(value = "/buildings", method = RequestMethod.GET, produces = "application/json")
 
     public HashSet<Building> getBudynki() {
@@ -37,6 +51,11 @@ public class BuildingInfoController {
         return SetsOfLocations.getHashSetBuildings();
     }
 
+    /**
+     *
+     * @param budynek
+     * @return
+     */
     @RequestMapping(value = "/buildings", method = RequestMethod.POST)
     public Building post(@RequestBody Building budynek) {
         // log
@@ -58,6 +77,11 @@ public class BuildingInfoController {
     }
 
     // GET poziomy
+
+    /**
+     *
+     * @return poziomy
+     */
     @RequestMapping(value = "/floors", method = RequestMethod.GET, produces = "application/json")
 
     public HashSet<Level> getPoziomy() {
@@ -68,6 +92,11 @@ public class BuildingInfoController {
     }
 
     // GET pomieszczenia
+
+    /**
+     *
+     * @return pomieszczenie
+     */
     @RequestMapping(value = "/rooms", method = RequestMethod.GET, produces = "application/json")
 
     public HashSet<Room> getPomieszczenia() {
@@ -78,6 +107,12 @@ public class BuildingInfoController {
     }
 
     // GET area
+
+    /**
+     *
+     * @param id id lokacji
+     * @return powierzchnie
+     */
     @RequestMapping(value = "/calculate-area/{id}", method = RequestMethod.GET)
     public Double getArea(@PathVariable("id") String id) {
         // log
@@ -88,6 +123,12 @@ public class BuildingInfoController {
     }
 
     // GET cubature
+
+    /**
+     *
+     * @param id id lokacji
+     * @return kubature
+     */
     @RequestMapping(value = "/calculate-cubature/{id}", method = RequestMethod.GET)
     public Double getCubature(@PathVariable("id") String id) {
         // log
@@ -98,6 +139,12 @@ public class BuildingInfoController {
     }
 
     // GET exposition
+
+    /**
+     *
+     * @param id id lokacji
+     * @return Moc oświetlenia
+     */
     @RequestMapping(value = "/calculate-exposition/{id}", method = RequestMethod.GET)
     public Double getExposition(@PathVariable("id") String id) {
         // log
