@@ -6,12 +6,13 @@ sudo: true
 #   secure: W6Z0XpN7LpXO1NoHrvaz9/OHJ3Db751a7X5uQV5PuCL3wbdir/QyiRc+hfjd1IQ3O+HpDXk3me6wZMQMXLul/2LXN+yJHOjz8kAG5udNTPHx9xZ2ilVniWlKGKnyjKMgoDoIuUCvDEb4+0U/XhmTbGa52dzWRzXnsJ4PN+kV6KvjA3V9ZLLdwwTvpsA5fb4XUZ01m1ZbfgKyF1/j9a/9+clgkfSG+XdKqxXKvSk+BsBqbhqJRbc10WmlYh6eP1QyguS1EtR1mqocdQEA8I+uD04cgO1Dwe0/5CmjY630pd1cfEhU4Z73Nh5QRDIlUY+qBBsFIggiEP0iZjsBui3lX/stowd/SQTZEl38IcIJJo+N71VudW5OAU4crfFNonmg71cka4Zjd/r/aPO+dn7406whzRKkGtSrzQbKtdKffZ0zwTelC/qjtzicf81OTQDR70FH0zgU/l6z7YsMlcuYVSEbuSQaGRKS0FR+13soPSCD8/1rNsHzTNSwdeD0QStS03qJHLtEk5+UiGL6valj1VFnGi81DTkS36JG2G6nL1NMDKi33y26uCVYRmn3NwVbasX6w+niLrjm1Svk5q6lUxozyvX2JAzH1QkqkgsS8gjwnpXg+3sLKv/gJT3SWVHA8dRUAyiXO5FxrEgZLdDeVV5ph3WtifY8/dfrzg/z+Zo=
 
 script: mvn clean verify
-
-deploy:
-  provider: script
-  script: ./push-index.sh
-  on:
-    branch: prod
+after_success:
+- ./push-index.sh
+#deploy:
+#  provider: script
+#  script: ./push-index.sh
+#  on:
+#    branch: prod
 #before_deploy:
 #      # Set up git user name and tag this commit
 #      - git config --local user.name "Wyroczen"
