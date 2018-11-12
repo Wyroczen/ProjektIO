@@ -44,6 +44,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<reportOutputDirectory>${basedir}/docs</reportOutputDirectory>
+					<destDir>docs</destDir>
+				</configuration>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
