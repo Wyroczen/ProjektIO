@@ -37,7 +37,7 @@ public class Building extends Location {
     /**
      * Getter Piziomy
      *
-     * @return zwraca ArrayList poziomy
+     * @return zwraca ArrayList poziomy - poziomy danego budynku
      */
     public ArrayList<Level> getPoziomy() {
         return poziomy;

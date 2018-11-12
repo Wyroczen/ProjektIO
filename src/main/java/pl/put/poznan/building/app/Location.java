@@ -12,25 +12,46 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @author wisni
  */
 public class Location {
+
     static final AtomicInteger counter = new AtomicInteger();
     private int id;
     private String name;
-    
+
     //konstruktory
-    public Location(String nazwa)
-    {
+    /**
+     * Konstruktor
+     *
+     * @param nazwa Pierwszy parametr konstruktora - nazwa danej lokacji
+     */
+    public Location(String nazwa) {
         this.id = counter.getAndIncrement();
         this.name = nazwa;
     }
+
+    /**
+     * Konstruktor bezparametrowy
+     *
+     */
     public Location() {
     }
-    
+
     //gettery
+    /**
+     * Getter Id
+     *
+     * @return zwraca int id lokacji
+     */
     public int getId() {
         return id;
     }
+
+    /**
+     * Getter Name
+     *
+     * @return zwraca string name danej lokacji
+     */
     public String getName() {
         return name;
-    }    
-    
+    }
+
 }
