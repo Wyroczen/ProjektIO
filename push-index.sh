@@ -1,2 +1,2 @@
 #!/bin/bash
-cp /Wyroczen/ProjektIO/target/apidocs/index.html /Wyroczen/ProjektIO/
+cp /target/apidocs/index.html /
