@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pl.put.poznan.transformer.app;
+package pl.put.poznan.building.app;
 
 import java.util.HashSet;
 

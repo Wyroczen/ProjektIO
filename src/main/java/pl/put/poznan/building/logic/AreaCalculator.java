@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pl.put.poznan.transformer.logic;
+package pl.put.poznan.building.logic;
 
-import pl.put.poznan.transformer.app.Building;
-import pl.put.poznan.transformer.app.Helper;
-import pl.put.poznan.transformer.app.Level;
-import pl.put.poznan.transformer.app.Location;
-import pl.put.poznan.transformer.app.Room;
-import pl.put.poznan.transformer.app.SetsOfLocations;
+import pl.put.poznan.building.app.Building;
+import pl.put.poznan.building.app.Helper;
+import pl.put.poznan.building.app.Level;
+import pl.put.poznan.building.app.Location;
+import pl.put.poznan.building.app.Room;
+import pl.put.poznan.building.app.SetsOfLocations;
 
 /**
  *
