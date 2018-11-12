@@ -48,7 +48,7 @@
 					<execution>
 						<id>attach-javadocs</id>
 						<goals>
-							<goal>html</goal>
+							<goal>jar</goal>
 						</goals>
 					</execution>
 				</executions>
