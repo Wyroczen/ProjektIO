@@ -12,7 +12,6 @@ import pl.put.poznan.building.app.Room;
 import pl.put.poznan.building.app.Level;
 import pl.put.poznan.building.logic.AreaCalculator;
 import pl.put.poznan.building.logic.CubatureCalculator;
-import pl.put.poznan.building.logic.HeatingCalculator;
 import pl.put.poznan.building.logic.LightingCalculator;
 
 /**
@@ -153,21 +152,5 @@ public class BuildingInfoController {
         logger.debug("Requested object's id: {}", id);
         
         return LightingCalculator.calculateExposition(id);
-    }
-    
-    // GET heating
-
-    /**
-     *
-     * @param id id lokacji
-     * @return Ogrzewanie w przeliczeniu na jednostkę objętości
-     */
-    @RequestMapping(value = "/calculate-heating/{id}", method = RequestMethod.GET)
-    public Double getHeating(@PathVariable("id") String id) {
-        // log
-        logger.info("Sending calculated heating for requested location");
-        logger.debug("Requested object's id: {}", id);
-        
-        return HeatingCalculator.calculateHeating(id);
     }
 }

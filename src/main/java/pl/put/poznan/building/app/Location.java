@@ -8,10 +8,8 @@ package pl.put.poznan.building.app;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * <h1>Klasa Lokacja</h1>
  *
- * @author Amarantowy
- * @version 1.0
+ * @author wisni
  */
 public class Location {
 
@@ -41,7 +39,7 @@ public class Location {
     /**
      * Getter Id
      *
-     * @return zwraca id lokacji
+     * @return zwraca int id lokacji
      */
     public int getId() {
         return id;
@@ -50,7 +48,7 @@ public class Location {
     /**
      * Getter Name
      *
-     * @return zwraca nazwę danej lokacji
+     * @return zwraca string name danej lokacji
      */
     public String getName() {
         return name;
