@@ -38,7 +38,7 @@ public class Room extends Location {
     /**
      * Getter Area
      *
-     * @return zwraca double area
+     * @return zwraca powierzchnię danego pokoju
      */
     public Double getArea() {
         return area;
@@ -47,7 +47,7 @@ public class Room extends Location {
     /**
      * Getter Cube
      *
-     * @return zwraca double cube
+     * @return zwraca kubaturę danejlokacji
      */
     public Double getCube() {
         return cube;
@@ -56,7 +56,7 @@ public class Room extends Location {
     /**
      * Getter Heating
      *
-     * @return zwraca double heating
+     * @return zwraca zużycie energii na ogrzewanie danego pokoju
      */
     public Double getHeating() {
         return heating;
@@ -65,7 +65,7 @@ public class Room extends Location {
     /**
      * Getter Light
      *
-     * @return zwraca double light
+     * @return zwraca moc oświetlenia w danym pokoju
      */
     public Double getLight() {
         return light;

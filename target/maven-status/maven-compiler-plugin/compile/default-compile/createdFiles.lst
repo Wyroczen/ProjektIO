@@ -4,8 +4,9 @@ pl\put\poznan\building\app\Location.class
 pl\put\poznan\building\logic\LightingCalculator.class
 pl\put\poznan\building\logic\AreaCalculator.class
 pl\put\poznan\building\rest\BuildingInfoController.class
+pl\put\poznan\building\app\Level.class
+pl\put\poznan\building\logic\HeatingCalculator.class
 pl\put\poznan\building\app\SetsOfLocations.class
 pl\put\poznan\building\app\BuildingInfoApplication.class
 pl\put\poznan\building\logic\CubatureCalculator.class
-pl\put\poznan\building\app\Level.class
 pl\put\poznan\building\app\Helper.class
