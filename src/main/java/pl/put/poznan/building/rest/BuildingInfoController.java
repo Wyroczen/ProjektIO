@@ -14,6 +14,15 @@ import pl.put.poznan.building.logic.AreaCalculator;
 import pl.put.poznan.building.logic.CubatureCalculator;
 import pl.put.poznan.building.logic.LightingCalculator;
 
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 /**
  *
  * @author 
@@ -23,6 +32,7 @@ public class BuildingInfoController {
 
     private static final Logger logger = LoggerFactory.getLogger(BuildingInfoController.class);
 
+    
     // GET LOKACJE
 
     /**
