@@ -165,6 +165,7 @@ public class BuildingInfoController {
         return LightingCalculator.calculateExposition(id);
     }
     
+    @RequestMapping(value = "/calculate-heating/{id}", method = RequestMethod.GET)
     public Double getHeating(@PathVariable("id") String id) {
         // log
         logger.info("Sending calculated Heating for requested location");
