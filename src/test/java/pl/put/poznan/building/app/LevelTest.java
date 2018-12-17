@@ -21,15 +21,15 @@ public class LevelTest {
     /**
      * Test of getRooms method, of class Level.
      */
-    @Test
-    public void testGetRooms() {
-        System.out.println("getRooms");
-        Level instance = new Level();
-        ArrayList<Room> expResult = null;
-        ArrayList<Room> result = instance.getRooms();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+//    @Test
+//    public void testGetRooms() {
+//        System.out.println("getRooms");
+//        Level instance = new Level();
+//        ArrayList<Room> expResult = null;
+//        ArrayList<Room> result = instance.getRooms();
+//        assertEquals(expResult, result);
+//        // TODO review the generated test code and remove the default call to fail.
+//        fail("The test case is a prototype.");
+//    }
     
 }

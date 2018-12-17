@@ -21,15 +21,15 @@ public class BuildingTest {
     /**
      * Test of getPoziomy method, of class Building.
      */
-    @Test
-    public void testGetPoziomy() {
-        System.out.println("getPoziomy");
-        Building instance = new Building();
-        ArrayList<Level> expResult = null;
-        ArrayList<Level> result = instance.getPoziomy();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+//    @Test
+//    public void testGetPoziomy() {
+//        System.out.println("getPoziomy");
+//        Building instance = new Building();
+//        ArrayList<Level> expResult = null;
+//        ArrayList<Level> result = instance.getPoziomy();
+//        assertEquals(expResult, result);
+//        // TODO review the generated test code and remove the default call to fail.
+//        fail("The test case is a prototype.");
+//    }
     
 }
