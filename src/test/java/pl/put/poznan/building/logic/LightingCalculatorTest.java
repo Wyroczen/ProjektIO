@@ -32,10 +32,13 @@ public class LightingCalculatorTest {
         System.out.println("calculateExposition");
         String str = "1";
         Double expResult = 0.0;
+        Double expResult2 = null;
+        
         //Double result = lc.calculateExposition(str);
         //assertEquals(expResult, result);
         boolean isNan = Double.isNaN(lc.calculateExposition(str));
-        assertTrue(isNan);
+        Double result = lc.calculateExposition(str);
+        assertTrue(isNan || result == expResult2);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
