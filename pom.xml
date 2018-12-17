@@ -36,7 +36,6 @@
             <version>2.44.0</version>
         </dependency>
         <dependency>
-		asdasdas
             <groupId>com.opera</groupId>
             <artifactId>operadriver</artifactId>
             <scope>test</scope>
