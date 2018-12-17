@@ -13,6 +13,7 @@ import pl.put.poznan.building.app.Level;
 import pl.put.poznan.building.logic.AreaCalculator;
 import pl.put.poznan.building.logic.CubatureCalculator;
 import pl.put.poznan.building.logic.LightingCalculator;
+import pl.put.poznan.building.logic.HeatCalculator;
 
 
 import io.swagger.annotations.Api;
@@ -162,5 +163,13 @@ public class BuildingInfoController {
         logger.debug("Requested object's id: {}", id);
         
         return LightingCalculator.calculateExposition(id);
+    }
+    
+    public Double getHeating(@PathVariable("id") String id) {
+        // log
+        logger.info("Sending calculated Heating for requested location");
+        logger.debug("Requested object's id: {}", id);
+        
+        return HeatCalculator.calculateHeating(id);
     }
 }
