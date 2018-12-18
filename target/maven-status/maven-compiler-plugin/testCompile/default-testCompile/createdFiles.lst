@@ -1,0 +1,11 @@
+pl\put\poznan\building\app\BuildingInfoApplicationTest.class
+pl\put\poznan\building\logic\AreaCalculatorTest.class
+pl\put\poznan\building\app\RoomTest.class
+pl\put\poznan\building\logic\CubatureCalculatorTest.class
+pl\put\poznan\building\logic\LightingCalculatorTest.class
+pl\put\poznan\building\rest\BuildingInfoControllerTest.class
+pl\put\poznan\building\app\HelperTest.class
+pl\put\poznan\building\app\LocationTest.class
+pl\put\poznan\building\app\LevelTest.class
+pl\put\poznan\building\app\BuildingTest.class
+pl\put\poznan\building\app\SetsOfLocationsTest.class
