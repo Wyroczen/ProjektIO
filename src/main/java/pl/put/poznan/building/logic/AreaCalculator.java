@@ -13,15 +13,17 @@ import pl.put.poznan.building.app.Room;
 import pl.put.poznan.building.app.SetsOfLocations;
 
 /**
+ * <h1>Klasa AreaCalculator</h1>
  *
- * @author corpt
+ * @author Amarantowy
+ * @version 1.0
  */
 public final class AreaCalculator {
     
     /**
-     *
+     * Caclulate area
      * @param str id obiektu
-     * @return powierzchnia Lokacji
+     * @return powierzchnia 
      */
     public static Double calculateArea(String str){
         
