@@ -27,20 +27,20 @@ public class LightingCalculatorTest {
     /**
      * Test of calculateExposition method, of class LightingCalculator.
      */
-    //@Test
-    //public void testCalculateExposition() {
-    //    System.out.println("calculateExposition");
-    //    String str = "1";
-    //    Double expResult = 0.0;
-    //    Double expResult2 = null;
+    @Test
+    public void testCalculateExposition() {
+        System.out.println("calculateExposition");
+        String str = "1";
+        Double expResult = 0.0;
+        Double expResult2 = null;
         
         //Double result = lc.calculateExposition(str);
         //assertEquals(expResult, result);
-    //    boolean isNan = Double.isNaN(lc.calculateExposition(str));
-    //    Double result = lc.calculateExposition(str);
-    //    assertTrue(isNan || result == expResult2);
+        boolean isNan = Double.isNaN(lc.calculateExposition(str));
+        Double result = lc.calculateExposition(str);
+        assertTrue(isNan || result == expResult2);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
-    //}
+    }
     
 }

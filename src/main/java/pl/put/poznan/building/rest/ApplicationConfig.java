@@ -43,7 +43,7 @@ public class ApplicationConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         System.out.println("KONFIGURACJA");
         http.csrf().disable();
-        http.authorizeRequests().antMatchers("/guest/**").permitAll()
+        http.authorizeRequests().antMatchers("/**").permitAll()
                 .anyRequest().authenticated();
 
         http.httpBasic().authenticationEntryPoint(basicAuthenticationPoint);

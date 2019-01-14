@@ -28,14 +28,14 @@ public class AreaCalculatorTest {
     /**
      * Test of calculateArea method, of class AreaCalculator.
      */
-    //@Test
-    //public void testCalculateArea() {
-    //    String str = "1";
-    //    Double expResult = 0.0;
-    //    Double expResult2 = null;
-    //    Double result = ac.calculateArea(str);
-    //    //assertEquals(expResult,result);
-    //    assertTrue(result == expResult || result == expResult2);
-    //}
+    @Test
+    public void testCalculateArea() {
+        String str = "1";
+        Double expResult = 0.0;
+        Double expResult2 = null;
+        Double result = ac.calculateArea(str);
+        //assertEquals(expResult,result);
+        assertTrue(result == expResult || result == expResult2);
+    }
     
 }
